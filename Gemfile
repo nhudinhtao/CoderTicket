@@ -48,6 +48,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'guard-rspec', require: false
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
+  gem 'simplecov', :require => false, :group => :test
 end
 
 group :development do
