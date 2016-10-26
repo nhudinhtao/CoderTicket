@@ -1,16 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/event.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
       "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/controllers/events_controller.rb": [
         1,
         1,
@@ -57,6 +47,16 @@
         0,
         0
       ],
+      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/event.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
       "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/region.rb": [
         0,
         0,
@@ -75,6 +75,6 @@
         0
       ]
     },
-    "timestamp": 1477501910
+    "timestamp": 1477502006
   }
 }
