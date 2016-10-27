@@ -13,6 +13,10 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/venue.rb": [
@@ -79,6 +83,6 @@
         0
       ]
     },
-    "timestamp": 1477551046
+    "timestamp": 1477551741
   }
 }
