@@ -21,5 +21,14 @@ RSpec.feature "Events", type: :feature do
     expect(page).to have_content 'this is a test event'
     expect(page).to have_content 'BOOK NOW'
   end
+
+  scenario "visit click BOOK NOW to buy tickets" do
+    visit root_path
+    visit event_path(@event1.id)
+    click_link "BOOK NOW"
+
+    expect(page).to have_content 'Event 1'
+    expect(page).to have_content 'Buy'
+  end
 end
 
