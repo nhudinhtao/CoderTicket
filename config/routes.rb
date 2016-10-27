@@ -3,6 +3,12 @@ Rails.application.routes.draw do
 
   get '/upcoming' => 'events#index'
 
+  get 'signup' => 'users#new'
+  get 'login' => 'sessions#new'
+  delete 'logout' => 'sessions#destroy'
+  post 'sessions/create', as: :submit_login
+
+  resources :users
   resources :events do
     resources :tickets
   end
