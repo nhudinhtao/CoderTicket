@@ -4,7 +4,7 @@
 
 - Submitted by: **Tao Nhu**
 - Time spent: **6** hours - Updating (TODO)
-- URL: **Insert your Heroku URL here**
+- URL: **https://rocky-river-14747.herokuapp.com**
 - SimpleCov Test Coverage: [coverage/index.html][coverage][index.html]
 
 ## User Stories
