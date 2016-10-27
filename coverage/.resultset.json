@@ -1,6 +1,18 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/venue.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/category.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/event.rb": [
         1,
         1,
@@ -15,39 +27,37 @@
         null,
         null,
         1,
+        0,
+        null,
+        null
+      ],
+      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/controllers/events_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
         1,
         null,
         null
       ],
-      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/venue.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/category.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
       "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/controllers/application_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0
+        1,
+        null,
+        null,
+        1,
+        null
       ],
-      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/controllers/events_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/ticket_type.rb": [
+        1,
+        1,
+        null
       ],
       "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/controllers/tickets_controller.rb": [
         0,
@@ -76,13 +86,8 @@
         0,
         0,
         0
-      ],
-      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/ticket_type.rb": [
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1477551741
+    "timestamp": 1477558173
   }
 }

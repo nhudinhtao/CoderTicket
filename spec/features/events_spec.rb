@@ -1,7 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Event, type: :model do
-
+RSpec.feature "Events", type: :feature do
   before(:each) do
     @venue1 = Venue.create!(name: "Da lat")
     @category1 = Category.create!(name: "Entertainment")
@@ -13,14 +12,14 @@ RSpec.describe Event, type: :model do
     Category.delete_all
     Event.delete_all
   end
-  
-  it "show upcoming event" do
-    expect(Event.upcoming).to eq [@event1]
-  end
 
-  it "search event" do 
-    expect(Event.search("Event 1")).to eq [@event1]
+  scenario "visit click on event to see event detail" do
+    visit root_path
+    visit event_path(@event1.id)
+
+    expect(page).to have_content 'Event 1'
+    expect(page).to have_content 'this is a test event'
+    expect(page).to have_content 'BOOK NOW'
   end
-  
 end
 

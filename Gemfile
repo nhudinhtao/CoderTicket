@@ -52,6 +52,10 @@ group :development, :test do
   gem 'simplecov', :require => false, :group => :test
 end
 
+group :test do
+  gem 'capybara', '~> 2.10', '>= 2.10.1'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console'
