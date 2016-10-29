@@ -1,0 +1,14 @@
+<h1>Venues</h1>
+
+<table class="table">
+  <th>Name</th>
+  <th>Region</th>
+  <th>Address</th>
+  <% @venues.each do |venue| %>
+    <tr>
+      <td><%= venue.name %></td>
+      <td><%= venue.region.name %></td>
+      <td><%= venue.full_address%></td>
+    </tr>
+  <% end %>
+</table>

@@ -37,7 +37,7 @@ The person with best test coverage will win a small present from the instructor 
 * [x] Users can create events.
 * [x] Users must click "publish event" before an event becomes viewable to other users.
 * [x] Users can create ticket types for that event.
-* [ ] Users can create venues.
+* [x] Users can create venues.
 * [x] An event must have at least one `ticket_type` defined before it can be published.
 * [x] User can see a list of events he or she has created.
 * [x] Users can edit their event after creation. But only the user who created the event can edit the event.

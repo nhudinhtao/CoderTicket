@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'venues/index'
+
+  get 'venues/new'
+
+  get 'venues/create'
+
   get 'ticket_types/index'
 
   get 'ticket_types/new'

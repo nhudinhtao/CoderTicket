@@ -1,0 +1,37 @@
+<h1>Create Venues</h1>
+
+<%= form_for @venue do |f| %>
+  <% if @venue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@venue.errors.count, "error") %> prohibited this venue from being saved:</h2>
+
+      <ul>
+      <% @venue.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% else %>
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :full_address %>
+    <%= f.text_field :full_address, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :region_id %>
+    <%= f.select :region_id, @regions.map{|r| [r.name, r.id]}  , {},  {required: 'true', autofocus: 'false', class: 'form-control'}  %>
+  </div>
+
+  <div class="form-group">
+        <%= f.submit 'Create Venue' , class: 'btn btn-block btn-info' %>
+  </div>
+
+  <% end %>
+<% end %>
+</div>

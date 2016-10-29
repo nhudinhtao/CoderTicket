@@ -36,6 +36,12 @@
         <% end %>
 
         <% if @event.user == current_user %>
+          <%= link_to  venues_new_path do %>
+            <button class='btn btn-lg btn-block btn-danger'> CREATE VENUE </button>
+          <% end %>
+        <% end %>
+
+        <% if @event.user == current_user %>
           <%= link_to edit_event_path(@event) do %>
             <button class='btn btn-lg btn-block btn-danger'> EDIT </button>
           <% end %>

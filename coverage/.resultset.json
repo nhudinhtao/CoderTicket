@@ -65,8 +65,8 @@
         null,
         null,
         1,
-        45,
-        44,
+        57,
+        52,
         5,
         null,
         null,
@@ -104,6 +104,35 @@
         null,
         null
       ],
+      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/controllers/ticket_types_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/controllers/users_controller.rb": [
         1,
         1,
@@ -131,6 +160,34 @@
         null,
         1,
         5,
+        null,
+        null
+      ],
+      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/controllers/venues_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -178,7 +235,18 @@
         1,
         null
       ],
+      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/ticket_type.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/venue.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/region.rb": [
         1,
         1,
         1,
@@ -191,6 +259,7 @@
         null
       ],
       "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/controllers/events_controller.rb": [
+        1,
         1,
         1,
         null,
@@ -228,14 +297,57 @@
         null,
         null,
         1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
         1,
         0,
         null,
-        null
-      ],
-      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/ticket_type.rb": [
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
         1,
         1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/controllers/tickets_controller.rb": [
@@ -277,6 +389,10 @@
         0,
         0
       ],
+      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/helpers/ticket_types_helper.rb": [
+        0,
+        0
+      ],
       "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/helpers/tickets_helper.rb": [
         0,
         0
@@ -285,13 +401,11 @@
         0,
         0
       ],
-      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/models/region.rb": [
-        0,
-        0,
+      "/Users/taonhu/Project/Study/coderschool/CoderTicket/app/helpers/venues_helper.rb": [
         0,
         0
       ]
     },
-    "timestamp": 1477735561
+    "timestamp": 1477747617
   }
 }
