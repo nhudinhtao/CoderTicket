@@ -37,10 +37,9 @@ class EventsController < ApplicationController
 
   def publish_event
     @event = Event.find(params[:id])
-    @event.published_at = DateTime.now
+    @event.published_at = Time.now
 
-    if @event.ticket_types?
-    else
+    if @event.ticket_types.count <= 0
       flash[:error] = 'Publish error! Please add some ticket types first.'
       redirect_to event_path(@event) and return
     end
