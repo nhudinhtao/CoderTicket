@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   post 'sessions/create', as: :submit_login
 
   get '/events/:id/publish_event' => 'events#publish_event', as: :publish_event
+  get '/events/mine' => 'events#mine', as: :mine_event
 
   resources :orders
   resources :users
