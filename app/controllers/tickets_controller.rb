@@ -4,6 +4,4 @@ class TicketsController < ApplicationController
     @event = Event.find(params[:event_id])
   end
 
-  def create
-  end
 end
