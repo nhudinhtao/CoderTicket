@@ -34,6 +34,25 @@ class EventsController < ApplicationController
     end
   end
 
+  def publish_event
+    @event = Event.find(params[:id])
+    @event.published_at = DateTime.now
+
+    if @event.ticket_types?
+    else
+      flash[:error] = 'Publish error! Please add some ticket types first.'
+      redirect_to event_path(@event) and return
+    end
+
+    if @event.save
+      flash[:success] = 'Event published.'
+    else
+      flash[:error] = 'Publish error! Please try again.'
+    end
+
+    redirect_to event_path(@event)
+  end
+
   private
   def event_params
     params.require(:event).permit(:user, :name, :venue_id, :category_id,  :hero_image_url, :extended_html_description, :starts_at, :ends_at)

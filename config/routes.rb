@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   post 'sessions/create', as: :submit_login
 
+  get '/events/:id/publish_event' => 'events#publish_event', as: :publish_event
+
   resources :orders
   resources :users
   resources :venues
