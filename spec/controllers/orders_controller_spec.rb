@@ -2,32 +2,14 @@ require 'rails_helper'
 
 RSpec.describe OrdersController, type: :controller do
 
-  describe "GET #new" do
-    it "returns http success" do
-      get :new
-      expect(response).to have_http_status(:success)
-    end
+  it "go to create without login, it will redirect to login page" do
+    post :create
+    expect(response).to redirect_to(login_path)
   end
 
-  describe "GET #create" do
-    it "returns http success" do
-      get :create
-      expect(response).to have_http_status(:success)
-    end
-  end
-
-  describe "GET #show" do
-    it "returns http success" do
-      get :show
-      expect(response).to have_http_status(:success)
-    end
-  end
-
-  describe "GET #destroy" do
-    it "returns http success" do
-      get :destroy
-      expect(response).to have_http_status(:success)
-    end
+  it "go to index without login, it will redirect to login page" do
+    get :index
+    expect(response).to redirect_to(login_path)
   end
 
 end

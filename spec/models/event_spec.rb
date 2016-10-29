@@ -14,8 +14,17 @@ RSpec.describe Event, type: :model do
     Event.delete_all
   end
   
+  it "don't show old event in upcoming event" do
+    @event2 = Event.create!(name: "Event 2", extended_html_description: "<p>this is a test old event</p>", venue: @venue1, category: @category1,  starts_at: Time.new(2016, 9, 24, 01, 04, 44))
+    expect(Event.upcoming).to eq [@event1]
+  end
+
   it "show upcoming event" do
     expect(Event.upcoming).to eq [@event1]
+  end
+
+  it "can not found a event" do
+    expect(Event.search("EventTest")).to eq []
   end
 
   it "search event" do 

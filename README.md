@@ -3,7 +3,7 @@
 **CoderTicket** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
 
 - Submitted by: **Tao Nhu**
-- Time spent: **23** hours - Updating (TODO)
+- Time spent: **24** hours - Updating (TODO)
 - URL: **https://rocky-river-14747.herokuapp.com**
 - SimpleCov Test Coverage: [coverage/index.html](https://nhudinhtao.github.io/static/CoderTicket/coverage/index.html)
 
@@ -12,7 +12,7 @@
 The following **required** functionality is complete:
 
 * [x] Implement required user stories
-* [ ] 10 model tests, 2 route tests, 2 controller tests, 2 view tests.
+* [x] 10 model tests, 2 route tests, 2 controller tests, 2 view tests.
 
 The person with best test coverage will win a small present from the instructor :)
 
