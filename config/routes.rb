@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   post 'sessions/create', as: :submit_login
 
+  resources :orders
   resources :users
   resources :events do
     resources :tickets

@@ -1,0 +1,27 @@
+<h1>Your Tickets:</h1>
+<% @orders.each do |order| %>
+<% @total = 0 %>
+  <br/>
+  <h2>Order at: <%= order.created_at.strftime('%c')  %></h2>
+  <table class="table">
+    <th> Ticket Type </th>
+    <th> Unit Price </th>
+    <th> Quantity </th>
+    <th> Cost </th>
+  
+    <% order.order_item.each do |order_item| %>
+      <tr>
+        <td> <%= order_item.ticket_type.name %> </td>
+        <td> <%= number_to_currency(order_item.ticket_type.price, unit: 'VND ', precision: 0) %> </td>
+        <td> <%= order_item.quantity %></td> 
+        <% @total += order_item.ticket_type.price * order_item.quantity %>
+        <td> <%= number_to_currency(order_item.ticket_type.price * order_item.quantity, unit: 'VND ', precision: 0) %></td> 
+      </tr>
+    <% end %> 
+  </table>
+
+<br/>
+
+Total: <%= number_to_currency(@total, unit: 'VND ', precision: 0) %>
+<br/>
+<% end %>
