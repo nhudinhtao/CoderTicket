@@ -68,15 +68,6 @@ RSpec.feature "Users", type: :feature do
     expect(page).to have_content "User not found."
   end
 
-  it "user can sign in with valid credentials" do
-    visit login_path
-    fill_in "email", :with => @user.email
-    fill_in "password", :with => @user.password
-    click_button "Log In"
-
-    expect(page).to have_content "Login successfully."
-  end
-
   scenario 'user cannot sign in with wrong email' do
     visit login_path
     fill_in "email", :with => "b@b.com"
@@ -93,5 +84,14 @@ RSpec.feature "Users", type: :feature do
     click_button "Log In"
 
     expect(page).to have_content "Incorrect password."
+  end
+
+  it "user can sign in with valid credentials" do
+    visit login_path
+    fill_in "email", :with => @user.email
+    fill_in "password", :with => @user.password
+    click_button "Log In"
+
+    expect(page).to have_content "Login successfully."
   end
 end
